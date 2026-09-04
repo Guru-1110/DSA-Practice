@@ -1,0 +1,19 @@
+interface A{
+    void show();
+    void config();
+}
+class B implements A{
+    void show{
+        System.out.println("This is show method");
+    }
+    void config{
+        System.out.println("This is config method");
+    }
+}
+public class Day-12{
+    public static void main(String[] args){
+        A obj = new B();
+        obj.show;
+        obj.config;
+    }
+}
