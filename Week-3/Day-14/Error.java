@@ -1,24 +1,21 @@
+class GuruException extends Exception{
+    public GuruException(String str){
+        super(str);
+    }
+}
 public class Error{
     public static void main(String[] args){
-        int i = 2;
+        int i = 20;
         int j = 0;
-        int arr[] = new int[5];
         String str = "Guru";
         try{
-            j = 20/i;
-            System.out.println(str.length());
-            System.out.println(arr[1]);
-            System.out.println(arr[5]);
-        }
-        catch(ArithmeticException e){
-            System.out.println("Cant divide by zero");
-        }
-        catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Know your limits");
-        }
+            j = 18/i;
+            if(j==0)
+                throw new GuruException("Cant divide by zero");
 
-        catch(NullPointerException e){
-            System.out.println("Null pointer exception");
+        }  
+        catch(GuruException e){
+            System.out.println("can't divide by zero");
         }
         catch(Exception e){
             System.out.println("Something went wrong");
