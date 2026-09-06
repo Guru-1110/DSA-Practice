@@ -9,6 +9,9 @@ public class Collect{
         c.add(1);
         c.add(7);
         System.out.println(c.get(2));
+        for(Integer n: c){
+            System.out.println(n);
+        }
 
     }
 }
