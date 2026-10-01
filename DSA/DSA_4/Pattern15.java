@@ -1,13 +1,14 @@
+import java.util.*;
 public class Pattern15{
-    public static void main(String[] args) {
-        int n = 4;
-        for(int i = 1; i <= n; i++){
-            char ch = 'A';
-            for(int j = n; j>=i; j--){
-                System.out.print(ch);
-                ch++;
-            }
-            System.out.println();
+    public int countDigit(int n) {
+        int count = 0;
+        while(n>0){
+            if(n/10>0){
+                count++;
+            } 
+
         }
+
     }
+    
 }
